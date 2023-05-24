@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #202020;
+}
+.Main {
+  display: flex;
+  flex-direction: row;
+  background-color: #202020;
+}
+.container {
+  background-color: #202020;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  padding-top: 50px;
+  padding-left: 380px;
+  background-color: #202020;
+}
+.search input {
+  border: 0;
+  outline: 0;
+  background: #4a4a4a;
+  color: white;
+  padding: 10px 150px;
+  height: 40px;
+  border-radius: 10px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 15px;
+}
+.search button {
+  border: 0;
+  outline: 0;
+  background-color: #202020;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.error {
+  padding-top: 10px;
+  color: red;
+  display: none;
+  padding-left: 600px;
+}
+
+.city {
+  padding-left: 480px;
+  padding-bottom: 20px;
+}
+
+.weather {
+  padding-top: 30px;
+}
+.weather h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+}
+.txt {
+  text-align: left;
+}
+.descrip {
+  padding-left: 490px;
+  color: white;
+  text-transform: capitalize;
+}
+.-weather img {
+  margin-left: 420px;
+  height: 250px;
+  width: 250px;
+}
+.-weather p {
+  font-size: 30px;
+}
+.-weather {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.weather-details {
+  padding-top: 70px;
+  padding-left: 30px;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.humidity i {
+  font-size: 30px;
+  font-weight: bold;
+}
+.wind {
+  padding-bottom: 10px;
+}
+.wind i {
+  font-size: 30px;
+  font-weight: bold;
+}
+.wind span {
+  font-size: 20px;
+}
+.humidity {
+  padding-bottom: 20px;
+}
+.humidity span {
+  font-size: 20px;
+}
+.line {
+  background-color: white;
+  margin-left: 50px;
+  margin-top: 30px;
+  height: 65vh;
+  width: 2px;
+}
+.rain {
+  padding-bottom: 20px;
+}
+.ra {
+  /* padding-top: 10px; */
+  font-size: 20px;
+}
+.min span {
+  font-size: 20px;
+}
+.max span {
+  font-size: 20px;
+}
+.min {
+  padding-bottom: 20px;
+}
+.date {
+  color: white;
+  font-size: 20px;
+  padding-left: 420px;
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .Main {
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+  }
+  .container {
+    background-color: #202020;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .search {
+    padding-top: 30px;
+    padding-left: 50px;
+    background-color: #202020;
+  }
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #4a4a4a;
+    color: white;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 15px;
+  }
+  .search button {
+    border: 0;
+    outline: 0;
+    background-color: #202020;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .error {
+    padding-top: 10px;
+    color: red;
+    display: none;
+    padding-left: 150px;
+  }
+  .txt {
+    text-align: left;
+  }
+  .descrip {
+    padding-left: 190px;
+    color: white;
+    text-transform: capitalize;
+  }
+  .city {
+    padding-left: 180px;
+    padding-bottom: 20px;
+  }
+
+  .weather {
+    padding-top: 50px;
+  }
+  .weather h1 {
+    font-size: 40px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .-weather img {
+    margin-left: 120px;
+    height: 250px;
+    width: 250px;
+  }
+  .-weather p {
+    padding-left: 210px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .-weather {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .weather-details {
+    padding-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+  }
+  .humidity i {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .wind {
+    padding-bottom: 10px;
+  }
+  .wind i {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .wind span {
+    font-size: 20px;
+  }
+  .humidity {
+    padding-bottom: 10px;
+  }
+  .humidity span {
+    font-size: 20px;
+  }
+  .line {
+    display: none;
+    /* background-color: #202020; */
+  }
+  .feel i {
+    font-size: 30px;
+  }
+  .feel {
+    padding-bottom: 10px;
+  }
+  .feels-like {
+    font-size: 20px;
+  }
+  .min span {
+    font-size: 20px;
+  }
+  .max span {
+    font-size: 20px;
+  }
+  .min {
+    padding-bottom: 10px;
+  }
+  .date {
+    color: white;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 10px;
+  }
+}

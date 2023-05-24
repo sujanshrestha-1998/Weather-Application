@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prototype-III</title>
+  </head>
+  <body>
+    <!-- <div class="refbtn"></div>
+    <button class="refresh">
+      <a href="insert.php"
+        >Refresh Data <i class="fa-solid fa-rotate-right"></i
+      ></a>
+    </button> -->
+    <div class="search">
+      <form onsubmit="offline(); return false;" id="searchForm">
+        <label for="city">Enter City Name:</label>
+        <input type="text" id="city" name="city" required />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="date"></div>
+    <div class="Main">
+      <div class="container">
+        <!-- end.search -->
+        <div class="error">
+          <p>Invalid city name</p>
+        </div>
+        <!-- end.error -->
+        <div class="weather">
+          <h1 class="city">N/A</h1>
+          <div class="-weather">
+            <img src="Images/cloudy.png" class="weather-img" />
+            <p class="temp">14°C</p>
+          </div>
+          <!-- end.-weather -->
+          <br />
+          <div class="txt">
+            <h2 class="descrip">overcast clouds</h2>
+          </div>
+          <!-- end.txt -->
+        </div>
+        <!-- end.weather -->
+      </div>
+      <!-- end.weather-details -->
+      <div class="line"></div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-droplet"></i>
+          <span class="-humidity">35%</span>
+          <p>Humidity</p>
+        </div>
+        <!-- end.humidity -->
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <span class="wind-speed">12km/H</span>
+          <p>Wind Speed</p>
+          <!-- end.wind -->
+        </div>
+        <div class="min">
+          <span class="minimum">11.4°C</span>
+          <p>Min Temp</p>
+        </div>
+        <div class="max">
+          <span class="maximum">13.9°C</span>
+          <p>Max Temp</p>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+    <div class="past">
+      <h2>Weather data from past 7 days</h2>
+    </div>
+    <div class="history">
+      <div class="weeks">
+        <h2 class="date-0">N/A</h2>
+        <img class="img-0" src="Images/clear.png" alt="" />
+        <h3 class="temperature-0">N/A</h3>
+        <p class="des0">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-1">N/A</h2>
+        <img class="img-1" src="Images/clear.png" alt="" />
+        <h3 class="temperature-1">N/A</h3>
+        <p class="des1">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-2">N/A</h2>
+        <img class="img-2" src="Images/clear.png" alt="" />
+        <h3 class="temperature-2">N/A</h3>
+        <p class="des2">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-3">N/A</h2>
+        <img class="img-3" src="Images/clear.png" alt="" />
+        <h3 class="temperature-3">N/A</h3>
+        <p class="des3">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-4">N/A</h2>
+        <img class="img-4" src="Images/clear.png" alt="" />
+        <h3 class="temperature-4">N/A</h3>
+        <p class="des4">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-5">N/A</h2>
+        <img class="img-5" src="Images/clear.png" alt="" />
+        <h3 class="temperature-5">N/A</h3>
+        <p class="des5">N/A</p>
+      </div>
+      <div class="weeks">
+        <h2 class="date-6">N/A</h2>
+        <img class="img-6" src="Images/clear.png" alt="" />
+        <h3 class="temperature-6">N/A</h3>
+        <p class="des6">N/A</p>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/10143ab47b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="offline.js"></script>
+  </body>
+</html>
